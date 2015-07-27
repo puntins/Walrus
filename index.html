@@ -13,6 +13,29 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script>
+          function initialize() {
+            var mapCanvas = document.getElementById('map-canvas');
+            var mapOptions = {
+              center: new google.maps.LatLng(45.522447, -122.693658),
+              zoom: 16,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+
+            <!-- WTF? -->
+
+            var iconBase = 'http://maps.google.com/mapfiles/kml/paddle/';
+            var marker = new google.maps.Marker({
+              position: myLatLng,
+              map: map,
+              icon: iconBase + 'orange-stars.png'
+            });
+
+          }
+          google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -20,6 +43,7 @@
         <![endif]-->
 
         <!-- The Walrus! add your massage site or application content here -->
+
         <header>
           <h1>Robo Massage | Portland, OR</h1>
           <nav>
@@ -31,6 +55,8 @@
             </ul>
           </nav>
         </header>
+
+
 
         <div class="content">
           <section id="hook">
@@ -115,6 +141,8 @@
             </section>
           </div>
         </div>
+
+        <div id="map-canvas"></div>
 
         <footer>
           <p>
