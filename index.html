@@ -15,12 +15,14 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js"></script>
         <script>
+        var myCenter=new google.maps.LatLng(45.522447,-122.693658);
           function initialize() {
             var mapProp = {
-              center: new google.maps.LatLng(45.522447,-122.693658),
+              center:myCenter,
               zoom: 16,
               mapTypeId: google.maps.MapTypeId.ROADMAP
             };
+
             var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
             var marker = new google.maps.Marker({
               position:myCenter,
@@ -135,7 +137,7 @@
             </section>
         </div>
 
-        <div id="googleMap"></div>
+        <div id="googleMap" style="width:500px;height:380px;"></div>
 
         <footer>
           <div class="flexcontainer">
