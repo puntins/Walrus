@@ -116,6 +116,10 @@ article{
   width: 20rem;
 }
 
+.two{
+  width: 30rem;
+}
+
 .flexcontainer{
   display:flex;
   flex-flow: row wrap;
