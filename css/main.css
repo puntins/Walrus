@@ -104,8 +104,32 @@ textarea {
 
 body{
   background-color:#ff6a41;
-  padding:0 1rem;
 }
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background-color: #50ffcb;
+}
+
+#hook {
+  margin-top: 110px;
+}
+
+section:before {
+  display:block;
+  content: " ";
+  margin-top: -110px;
+  height: 110px;
+  visibility: hidden;
+}
+
+section:before {
+  display: block;
+
+}
+
 
 h1{
   text-align:center;
