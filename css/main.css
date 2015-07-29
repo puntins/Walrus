@@ -102,10 +102,6 @@ textarea {
   margin: 20px 0 0 20px;
 }
 
-header{
-  color: #b24526;
-}
-
 body{
   background-color:#ff6a41;
   padding:0 1rem;
@@ -113,6 +109,7 @@ body{
 
 h1{
   text-align:center;
+  font-family: 'Open sans', sans-serif;
 }
 
 article{
