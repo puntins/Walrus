@@ -15,12 +15,14 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js"></script>
         <script>
+        var myCenter=new google.maps.LatLng(45.522447,-122.693658);
           function initialize() {
             var mapProp = {
-              center: new google.maps.LatLng(45.522447,-122.693658),
+              center:myCenter,
               zoom: 16,
               mapTypeId: google.maps.MapTypeId.ROADMAP
             };
+
             var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
             var marker = new google.maps.Marker({
               position:myCenter,
@@ -40,12 +42,13 @@
 
         <header>
           <div class="maxwidth">
+            <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,800' rel='stylesheet' type='text/css'>
             <h1>Robo Massage | Portland, OR</h1>
             <nav>
               <ul class="navlist flexcontainer">
-                <li>Home</li>
                 <li>Massage Benefits</li>
                 <li>Offerings</li>
+                <li>Our Massage Therapists</i>
                 <li>Contact</li>
               </ul>
             </nav>
@@ -55,7 +58,7 @@
         <div class="content maxwidth">
 
           <section id="hook">
-            <h2>Welcome to the Future of Theraputic Massage</h2>
+            <h2>Welcome to the Future of Therapeutic Massage</h2>
             <div class="flexcontainer">
               <article class="image">
                 <img src="img/topimage.jpg" alt="robot to human: lean back" />
@@ -120,6 +123,31 @@
               </article>
             </div>
           </section>
+
+          <section id="Bio">
+            <h2>Our Massage Therapists</h2>
+            <div class="flexcontainer">
+              <article class="">
+                <h3>Model #Xd75 "Samantha"</h3>
+                <p>
+
+                </p>
+              </article>
+              <article class="">
+                <h3>Model #G45cp "Carlos"</h3>
+                <p>
+
+                </p>
+              </article>
+              <article class="">
+                <h3>Model #RdRR "Bart"</h3>
+                <p>
+
+                </p>
+              </article>
+            </div>
+          </section>
+
           <section id="contact">
               <h2>Contact</h2>
               <div class="flexcontainer">
@@ -137,12 +165,12 @@
             </section>
         </div>
 
-        <div id="googleMap"></div>
+        <div id="googleMap" style="width:500px;height:380px;"></div>
 
         <footer>
           <div class="flexcontainer">
             <p>
-              Copyright 2015 Walrus
+              &copy; Copyright 2015 The Walrus
             </p>
           </div>
         </footer>
