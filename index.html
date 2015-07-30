@@ -11,6 +11,7 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
+          <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,800' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -40,16 +41,15 @@
 
         <!-- The Walrus! add your massage site or application content here -->
 
+        <div class="mainNav">
         <header>
-          <div class="maxwidth">
-            <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,800' rel='stylesheet' type='text/css'>
-            <h1>Robo Massage | Portland, OR</h1>
+            <h1><a href="http://puntins.github.io/Walrus/">Robo Massage | Portland, OR</a></h1>
             <nav>
-              <ul class="navlist flexcontainer">
-                <li>Massage Benefits</li>
-                <li>Offerings</li>
-                <li>Our Massage Therapists</i>
-                <li>Contact</li>
+              <ul id="navlistFlexcontainer">
+                <li><a href="#benefits">Massage Benefits</a></li>
+                <li><a href="#offerings">Offerings</a></li>
+                <li><a href="#bio">Our Massage Therapists</a></i>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -97,7 +97,7 @@
                 <h3>Benefit #3</h3>
                 <img src="img/Benefit3.jpg">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.
                 </p>
               </article>
             </div>
@@ -126,25 +126,25 @@
             </div>
           </section>
 
-          <section id="Bio">
+          <section id="bio">
             <h2>Our Massage Therapists</h2>
             <div class="flexcontainer">
               <article class="">
                 <h3>Model #Xd75 "Samantha"</h3>
                 <p>
-
+                  <img src="img/Samantha_new.png" alt="">
                 </p>
               </article>
               <article class="">
                 <h3>Model #G45cp "Carlos"</h3>
                 <p>
-
+                  <img src="img/Carlos_new.png" alt="">
                 </p>
               </article>
               <article class="">
                 <h3>Model #RdRR "Bart"</h3>
                 <p>
-
+                  <img src="img/Bart_new.png" alt="">
                 </p>
               </article>
             </div>
@@ -155,7 +155,8 @@
               <div class="flexcontainer">
                 <article class="">
                   <h3>Location</h3>
-                  <div id="map-canvas"></div>
+                  <p>735 SW 20th Pl #230, Portland, OR 97205</p>
+                  <div id="googleMap" style="width:500px;height:380px;"></div>
                 </article>
                 <article class="">
                   <h3>Contact</h3>
@@ -167,10 +168,8 @@
             </section>
         </div>
 
-        <div id="googleMap" style="width:500px;height:380px;"></div>
-
         <footer>
-          <div class="flexcontainer">
+          <div id="footerflexContainer">
             <p>
               &copy; Copyright 2015 The Walrus
             </p>
