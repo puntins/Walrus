@@ -158,9 +158,66 @@
                   <p>735 SW 20th Pl #230, Portland, OR 97205</p>
                   <div id="googleMap" style="width:500px;height:380px;"></div>
                 </article>
+
                 <article class="">
                   <h3>Contact</h3>
                   <div class="contactform">
+
+                    <form name="htmlform" method="post" action="html_form_send.php">
+                      <table>
+                      </tr>
+                      <tr>
+                       <td>
+                        <label for="first_name">First Name *</label>
+                       </td>
+                       <td>
+                        <input  type="text" name="first_name" maxlength="50" size="30">
+                       </td>
+                      </tr>
+
+                      <tr>
+                       <td>
+                        <label for="last_name">Last Name *</label>
+                       </td>
+                       <td>
+                        <input  type="text" name="last_name" maxlength="50" size="30">
+                       </td>
+                      </tr>
+
+                      <tr>
+                       <td>
+                        <label for="email">Email Address *</label>
+                       </td>
+                       <td>
+                        <input  type="text" name="email" maxlength="80" size="30">
+                       </td>
+
+                      </tr>
+                      <tr>
+                       <td>
+                        <label for="telephone">Telephone Number</label>
+                       </td>
+                       <td>
+                        <input  type="text" name="telephone" maxlength="30" size="30">
+                       </td>
+                      </tr>
+
+                      <tr>
+                       <td>
+                        <label for="comments">Comments *</label>
+                       </td>
+                       <td>
+                        <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+                       </td>
+
+                      </tr>
+                      <tr>
+                       <td colspan="2" style="text-align:center">
+                        <input type="submit" value="Submit">
+                       </td>
+                      </tr>
+                      </table>
+                      </form>
 
                   </div>
                 </article>
