@@ -10,11 +10,12 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
+   html {
+       color: #1A1A1A;
+       font-size: 1em;
+       font-family: sans-serif;
+       line-height: 1.4;
+   }
 
 /*
  * Remove text-shadow in selection highlight:
@@ -103,7 +104,7 @@ textarea {
 }
 
 body {
-  background-color:#ff6a41;
+  background-color: #B84A00;
 }
 
 header {
@@ -160,6 +161,10 @@ nav a.selected, nav a:hover {
 
 article {
   width: 20rem;
+}
+
+.two{
+  width: 40rem;
 }
 
 .flexcontainer {
