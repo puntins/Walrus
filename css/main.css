@@ -125,6 +125,11 @@ section:before {
   visibility: hidden;
 }
 
+section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 h1 {
   text-decoration: none;
   text-align:center;
@@ -186,6 +191,10 @@ img {
 
 .contactform table {
   width: 450px;
+}
+
+.contactform td {
+  padding-bottom: 1rem;
 }
 
 #footerflexContainer {
