@@ -194,6 +194,10 @@ img {
   width: 100%;
 }
 
+#googleMap {
+  margin-left: 0px;
+}
+
 .contactform table {
   width: 450px;
 }
