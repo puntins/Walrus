@@ -111,7 +111,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0px;
-  background-color: #50ffcb;
+  background-color: #48E6B7;
 }
 
 #hook {
@@ -206,7 +206,7 @@ img {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
-  background-color: #50ffcb;
+  background-color: #48E6B7;
   font-family: 'Open Sans', sans-serif;
   margin: 20px 0px 0px 0px;
   font-size: .75em;
